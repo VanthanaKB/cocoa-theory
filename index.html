@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cocoa Theory | Cocoa-Forward Desserts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo">Cocoa Theory</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" id="cartToggle" aria-label="Open cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+            <path d="M2.5 3h2l2.6 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 8H6"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <p class="hero-kicker">A dessert counter for people who don't do things halfway with chocolate</p>
+        <h1>Every recipe starts<br>with cocoa, then argues<br>its way from there.</h1>
+        <p class="hero-sub">Twenty-four ways we've pushed one ingredient as far as it'll go &mdash; brownies, cakes, shakes, and a few classics we couldn't leave alone.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">See the menu</a>
+          <a href="#story" class="btn btn-ghost">Why Cocoa Theory</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="cocoa-bean cb1"></div>
+        <div class="cocoa-bean cb2"></div>
+        <div class="cocoa-bean cb3"></div>
+        <div class="drip"></div>
+      </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section class="why" id="story">
+      <div class="why-inner">
+        <div class="why-text">
+          <h2>Started in a dorm kitchen. Still a little obsessed.</h2>
+          <p>Cocoa Theory began with one belief: most desserts treat chocolate as a flavor among many. Ours treat it as the whole point. Every item on this menu earns its place by how honestly it uses cocoa &mdash; not by how it photographs.</p>
+        </div>
+        <ul class="why-stats">
+          <li><span class="num">24</span><span class="label">Items on the menu</span></li>
+          <li><span class="num">5</span><span class="label">Menu categories</span></li>
+          <li><span class="num">1</span><span class="label">Ingredient we never compromise on</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== MENU ===== -->
+    <section class="menu" id="menu">
+      <div class="menu-head">
+        <h2>The Menu</h2>
+        <p>Tap a category, then add whatever you're craving to your order.</p>
+      </div>
+
+      <div class="menu-tabs" id="menuTabs" role="tablist">
+        <button class="tab active" data-category="all">All</button>
+        <button class="tab" data-category="brownies">Brownies</button>
+        <button class="tab" data-category="cakes">Cakes &amp; Pastry</button>
+        <button class="tab" data-category="cold">Cold &amp; Frozen</button>
+        <button class="tab" data-category="shakes">Shakes &amp; Drinks</button>
+        <button class="tab" data-category="classics">Classics &amp; Trending</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"><!-- injected by script.js --></div>
+    </section>
+
+    <!-- ===== CONTACT / FOOTER STRIP ===== -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <h2>Visit the counter</h2>
+        <p>Open daily, 11am &ndash; 9pm. Orders placed here are for pickup &mdash; delivery coming soon.</p>
+        <a href="#menu" class="btn btn-primary">Start an order</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Cocoa Theory. Made with too much chocolate.</p>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your order">
+    <div class="cart-header">
+      <h2>Your Order</h2>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty" id="cartEmpty">Nothing here yet &mdash; go pick something cocoa-forward.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cartTotal">&#8377;0</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
