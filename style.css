@@ -264,3 +264,41 @@ p{margin:0 0 1em;}
 @media (max-width:480px){
   .cart-drawer{width:100%; max-width:100%;}
 }
+
+/* FIX MENU CARD ALIGNMENT */
+.item-media {
+  height: 220px;
+  overflow: hidden;
+}
+
+.item-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.item-body {
+  position: static !important;
+  padding: 16px;
+  background: #fff;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
