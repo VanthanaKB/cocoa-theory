@@ -150,7 +150,7 @@ function renderCart(){
     total += item.price * qty;
     return `
       <div class="cart-row">
-        <div class="cr-icon">🍫</div>
+        <div class="cr-icon">😋</div>
         <div class="cr-info">
           <div class="name">${item.name}</div>
           <div class="unit">₹${item.price} each</div>
