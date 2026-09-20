@@ -28,17 +28,17 @@ const MENU = [
     desc:'Layered truffle cream over soft chocolate sponge.' },
 
   // Cold & Frozen
-  { id:'f1', name:'Chocolate Ice Cream Cone', category:'cold', price:100, image:'chocolate-ice-cream-cone.jpg',
+  { id:'f1', name:'Chocolate Ice Cream Cone', category:'cold', price:100, image:'chocolate-icecream-cone.jpg',
     desc:'A classic cone, made properly.' },
-  { id:'f2', name:'Belgian Chocolate Ice Cream Scoop', category:'cold', price:90, image:'belgian-chocolate-ice-cream-scoop.jpg',
+  { id:'f2', name:'Belgian Chocolate Ice Cream Scoop', category:'cold', price:90, image:'belgian-chocolate-icecream-scoop.jpg',
     desc:'One generous scoop of Belgian chocolate.' },
-  { id:'f3', name:'Cookie & Ice Cream Sandwich', category:'cold', price:115, image:'cookie-and-ice-cream-sandwich.jpg',
+  { id:'f3', name:'Cookie & Ice Cream Sandwich', category:'cold', price:115, image:'cookie-and-cream-icecream-sandwich.jpg',
     desc:'A scoop pressed between two warm chocolate cookies.' },
 
   // Shakes & Drinks
-  { id:'s1', name:'Nutella Thick Shake', category:'shakes', price:240, image:'nutella-thick-shake.jpg',
+  { id:'s1', name:'Nutella Thick Shake', category:'shakes', price:240, image:'nutella-thickshake.jpg',
     desc:'Thick, cold, and properly Nutella-forward.' },
-  { id:'s2', name:'Chocolate Thick Shake', category:'shakes', price:220, image:'chocolate-thick-shake.jpg',
+  { id:'s2', name:'Chocolate Thick Shake', category:'shakes', price:220, image:'chocolate-thickshake.jpg',
     desc:'Our classic shake, no shortcuts.' },
   { id:'s3', name:'Belgian Chocolate Milkshake', category:'shakes', price:180, image:'belgian-chocolate-milkshake.jpg',
     desc:'Made with real Belgian chocolate.' },
@@ -50,7 +50,7 @@ const MENU = [
   // Classics & Trending
   { id:'t1', name:'Chocolate Cheesecake', category:'classics', price:300, image:'chocolate-cheesecake.jpg',
     desc:'Dense and creamy, with a chocolate biscuit base.' },
-  { id:'t2', name:'Tiramisu', category:'classics', price:350, image:'tiramisu.jpg',
+  { id:'t2', name:'Tiramisu', category:'classics', price:350, image:'chocolate-tiramisu.jpg',
     desc:'Coffee-soaked layers with a cocoa dusted top.' },
   { id:'t3', name:'Dubai Chocolate Bar', category:'classics', price:350, image:'dubai-chocolate-bar.jpg',
     desc:'Pistachio and knafeh filling wrapped in chocolate, the viral favourite.' },
@@ -58,9 +58,9 @@ const MENU = [
     desc:'The same pistachio-knafeh filling, in tart form.' },
   { id:'t5', name:'Chocolate Covered Strawberries', category:'classics', price:400, image:'chocolate-covered-strawberries.jpg',
     desc:'200g of fresh strawberries, hand-dipped in chocolate.' },
-  { id:'t6', name:"S'mores Brownie", category:'classics', price:280, image:'s-mores-brownie.jpg',
+  { id:'t6', name:"S'mores Brownie", category:'classics', price:280, image:'smores-brownie.jpg',
     desc:'Toasted marshmallow and graham crumble over a fudgy brownie.' },
-  { id:'t7', name:'Chocolate Stuffed Cookie', category:'classics', price:200, image:'chocolate-stuffed-cookie.jpg',
+  { id:'t7', name:'Chocolate Stuffed Cookie', category:'classics', price:200, image:'chocolate-stuffed-cookies.jpg',
     desc:'Two to three cookies, stuffed with a molten chocolate centre.' },
   { id:'t8', name:'Belgian Chocolate Bar', category:'classics', price:200, image:'belgian-chocolate-bar.jpg',
     desc:'A straightforward bar of Belgian chocolate, done right.' },
