@@ -145,7 +145,7 @@ function renderCart(){
   let total = 0;
 
   cartItemsEl.innerHTML = ids.map(id => {
-    const item = MENU.find(i => i.id === id);
+    const item = MENU.find(i => String(i.id) === String(id));
     const qty = cart[id];
     total += item.price * qty;
     return `
