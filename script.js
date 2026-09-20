@@ -8,17 +8,17 @@
 // changing the item-media <div> in renderMenu() to an <img>.
 const MENU = [
   // Brownies
-  { id:'b1', name:'Chocolate Brownie', category:'brownies', price:180, icon:'🍫',
+  { id:'b1', name:'Chocolate Brownie', category:'brownies', price:180, image:'chocolate-brownie.jpg',
     desc:'Our classic, dense and fudgy. Add a scoop of vanilla ice cream for ₹50.' },
-  { id:'b2', name:'Double Chocolate Brownie', category:'brownies', price:190, icon:'🍫',
+  { id:'b2', name:'Double Chocolate Brownie', category:'brownies', price:190, image:'double-chocolate-brownie.jpg',
     desc:'Chocolate batter, chocolate chunks. Add a scoop of vanilla ice cream for ₹50.' },
-  { id:'b3', name:'Nutella Brownie', category:'brownies', price:200, icon:'🍫',
+  { id:'b3', name:'Nutella Brownie', category:'brownies', price:200, image:'nutella-brownie.jpg',
     desc:'Swirled through with Nutella. Add a scoop of vanilla ice cream for ₹50.' },
-  { id:'b4', name:'Peanut Butter Brownie', category:'brownies', price:200, icon:'🍫',
+  { id:'b4', name:'Peanut Butter Brownie', category:'brownies', price:200, image:'peanut-butter-brownie.jpg',
     desc:'Salty-sweet peanut butter ribboned through. Add a scoop of vanilla ice cream for ₹50.' },
 
   // Cakes & Pastry
-  { id:'c1', name:'Dream Cake', category:'cakes', price:300, icon:'🍰',
+  { id:'c1', name:'Dream Cake', category:'cakes', price:300, image:'dream-cake.jpg',
     desc:'Five layers of chocolate cake, mousse, and ganache, dusted with cocoa. Small box ₹300 / Medium box ₹500.' },
   { id:'c2', name:'Chocolate Pastry', category:'cakes', price:250, icon:'🧁',
     desc:'A neat single slice, rich and not too sweet.' },
@@ -94,7 +94,7 @@ function renderMenu(){
 
   menuGrid.innerHTML = items.map(item => `
     <article class="item-card">
-      <div class="item-media">${item.icon}</div>
+      <div class="item-media"><img src="${item.image}" alt="${item.name}"></div>
       <div class="item-body">
         <h3>${item.name}</h3>
         <p class="desc">${item.desc}</p>
